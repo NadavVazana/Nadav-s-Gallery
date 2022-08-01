@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coding Academy</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/ca-gallery.css" rel="stylesheet">
+
+</head>
+
+<body onload="init()" id="page-top">
+  <div class="offcanvas-btn" onClick="openCanvas()">
+    <i class="fa fa-comment" aria-hidden="true"></i>
+  </div>
+  <aside class="offcanvas-aside">
+
+  <!-- Contact -->
+  <section id=" contact">
+    <!--Section: Contact v.2-->
+<section class="mb-4">
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-11 mb-md-0 mb-5">
+          <form onsubmit="contactSubmit(event)" id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+               
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text"class="email">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="subject">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="message md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+
+              <button class="btn bg-primary">Submit</button>
+              <!--Grid row-->
+
+          </form>
+
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+  </section>
+    
+  </aside>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Nadav's Site</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Welcome To my Portfolio</div>
+        <div class="intro-heading">It's Nice To Meet You</div>
+        <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Specialities</h2>
+          <h3 class="section-subheading text-muted">Here you can see my specialities</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x "></i>
+              <i class="fa fa-handshake-o fa-stack-1x fa-inverse"></i>
+            </span>
+          <h4 class="service-heading">E-Commerce</h4>
+          <p class="text-muted">I have the ability to help anyone</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x "></i>
+              <i class="fa fa-microphone-slash fa-stack-1x fa-inverse"></i>
+            </span>
+          <h4 class="service-heading">Responsive Design</h4>
+          <p class="text-muted">I have the ability to mute my microphone when the class is on</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x "></i>
+              <i class="fa fa-battery-full fa-stack-1x fa-inverse"></i>
+            </span>
+          <h4 class="service-heading">Web Security</h4>
+          <p class="text-muted">Always available!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">My Projects</h2>
+          <h3 class="section-subheading text-muted">Let's see some games!</h3>
+        </div>
+      </div>
+      <div class="row projs">
+
+      </div>
+    </div>
+ 
+  </section>
+
+
+  <!-- Me -->
+  <section class="bg-light" id="me" style="padding: 0px;">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto  rounded-circle" src="img/team/prof-pic.png" alt="prof-pic">
+            <h4>Nadav Vazana</h4>
+            <p class="text-muted">Full stack Developer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a target="_blank" href="https://twitter.com/nadav_vazana">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://www.facebook.com/nadav.113322/">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                
+                <a target="_blank" href="https://www.linkedin.com/in/nadav-vazana-5b4540213/">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-8 flex-align-center">
+            <p class="large text-muted  about-description">My name is Nadav im 27 years old from Tel-Aviv. i am a full stack developer for 259 years now and i'm the best you'll ever find</p>    
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 flex-align-center">
+          <a href="http://coding-academy.org" target="_blank">
+            <img src="./img/ca-logo.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-4 flex-align-center">
+          <ul class="list-inline social-buttons flex-align-center">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://twitter.com/nadav_vazana">
+                  <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item flex-align-center">
+              <a target="_blank" href="https://www.facebook.com/nadav.113322/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.linkedin.com/in/nadav-vazana-5b4540213/">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 flex-align-center">
+            <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">More Me</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Even More</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <section class="portfolio-section">
+    <div class="portfolio-modal modal fade" id="portfolio-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/util.service.js"></script>
+  <script src="js/ca-gallery.js"></script>
+  <script src="js/offCanvas.js"></script>
+  <script src="js/storage-service.js"></script>
+  <script src="js/modal-service.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
