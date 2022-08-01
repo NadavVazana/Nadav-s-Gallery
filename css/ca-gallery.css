@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    background-color: #222222;
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 p {
@@ -7,7 +8,7 @@ p {
 }
 
 .contact-container{
-    background-color: white;
+    background-color: rgb(65, 57, 57);
     height: 100%;
     width: 100%;
     display: flex;
@@ -298,7 +299,7 @@ header.masthead .intro-text .intro-heading {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
@@ -393,7 +394,7 @@ header.masthead .intro-text .intro-heading {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    background-color: #222222;
+    background-color: #a8a0a0;
 }
 .portfolio-modal .modal-backdrop {
     display: none;
