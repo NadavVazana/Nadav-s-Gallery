@@ -1,14 +1,43 @@
-# [Cosing Academy - Base Gallery]
-A responsive portfolio grid to be used by Coding Academy students
+# Gallery Example
+
+This is a gallery example.
+
+## Table Of Contents
 
 
-## Usage
 
-### Basic Usage
+>[Getting Started](#start)
 
-After downloading, simply edit the HTML, CSS and JS files included with the template to Make-it-Yours.
+>[Showcase](#showcase)
+
+>[Authors](#authors)
 
 
-## Copyright and License
+## <a id="start" /> Getting Started
 
-Code released under the [MIT] license.
+You can view the application on Github Pages right [here](https://nadavvazana.github.io/Nadav-s-Gallery/).
+
+Or you can clone the project to your computer and make it work with Live Server:
+
+```
+git clone https://github.com/NadavVazana/Nadav-s-Gallery
+```
+
+
+## <a id="showcase" /> Showcase
+
+### Homepage
+
+<img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667165787/Untitled_l7nyqp.png" />
+
+<img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667165787/Untitled3_rnmq1f.png" />
+
+<img src="https://res.cloudinary.com/ds8xkm0ue/image/upload/v1667165787/Untitled4_hfzhj2.png" />
+
+
+
+<hr />
+
+### Authors
+
+> [Nadav Vazana](https://github.com/NadavVazana)
